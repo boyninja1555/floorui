@@ -1,0 +1,42 @@
+{
+  "name": "floorui",
+  "version": "1.0.1",
+  "description": "Floor's official UI kit",
+  "homepage": "https://github.com/boyninja1555/floorui#readme",
+  "bugs": {
+    "url": "https://github.com/boyninja1555/floorui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boyninja1555/floorui.git"
+  },
+  "license": "MIT",
+  "author": "boyninja1555",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  }
+}
