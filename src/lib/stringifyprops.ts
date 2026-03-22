@@ -12,6 +12,6 @@ import type { VanillaProps } from "./props"
  * @returns Stringified props
  */
 export function stringifyProps<T>(props: HTMLAttributes<T> | VanillaProps) {
-    const flatProps = Object.entries(props).map((k, v) => `${k}="${v}"`)
+    const flatProps = Object.entries(props).map(([k, v]) => `${k}="${v}"`)
     return flatProps.length === 0 ? "" : flatProps.join(" ")
 }

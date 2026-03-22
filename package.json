@@ -1,6 +1,6 @@
 {
   "name": "floorui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Floor's official UI kit",
   "homepage": "https://github.com/boyninja1555/floorui#readme",
   "bugs": {
@@ -28,7 +28,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "dist": "npm run build && npm publish"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
